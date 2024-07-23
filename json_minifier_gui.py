@@ -1,6 +1,7 @@
 import sys
 import json
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QFileDialog, QTextEdit, QVBoxLayout, QLabel
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QFileDialog, QTextEdit, QVBoxLayout, QLabel, QHBoxLayout
+from PyQt5.QtCore import Qt
 
 class JSONMinifierApp(QWidget):
     def __init__(self):
@@ -23,6 +24,17 @@ class JSONMinifierApp(QWidget):
 
         self.copyLabel = QLabel('Copy the above text for use in Postman mock creation.', self)
         layout.addWidget(self.copyLabel)
+
+        # Create a horizontal layout for the bottom right link
+        bottomLayout = QHBoxLayout()
+        bottomLayout.addStretch(1)  # Add a stretchable space to push the link to the right
+
+        # Create a QLabel with a hyperlink
+        self.docLink = QLabel('<a href="https://github.com/jt-rakuten/json-minifier-gui">Documentation link to the README</a>', self)
+        self.docLink.setOpenExternalLinks(True)
+        bottomLayout.addWidget(self.docLink)
+
+        layout.addLayout(bottomLayout)
 
         self.setLayout(layout)
 
