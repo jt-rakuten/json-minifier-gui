@@ -1,0 +1,3 @@
+([('json_minifier_gui',
+   '/Users/ts-jonathan.tran/Project/scratch/dist/json_minifier_gui',
+   'EXECUTABLE')],)
