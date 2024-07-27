@@ -1,5 +1,6 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+
 a = Analysis(
     ['json_minifier_gui.py'],
     pathex=[],
@@ -22,7 +23,7 @@ exe = EXE(
     a.datas,
     [],
     name='json_minifier_gui',
-    debug=True,  # Enable debug mode
+    debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
@@ -34,11 +35,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    onefile=True,  # Bundle everything into a single executable
-)
-app = BUNDLE(
-    exe,
-    name='json_minifier_gui.app',
-    icon=None,
-    bundle_identifier=None,
 )
