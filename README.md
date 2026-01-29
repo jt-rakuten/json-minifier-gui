@@ -24,7 +24,7 @@ The JSON Minifier is a user-friendly desktop application designed to simplify an
 - No additional software installation required
 
 ### Installation
-1. Locate the `JSONMinifier.exe` (Windows), `JSONMinifier.app` (macOS), or `JSONMinifier` (Linux) file provided to you.
+1. Locate the `json_minifier_gui.exe` (Windows), `json_minifier_gui.app` (macOS), or `json_minifier_gui` (Linux) file provided to you.
 2. Copy this file to a location of your choice on your computer.
 3. No further installation steps are required.
 
